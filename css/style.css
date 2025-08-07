@@ -9,15 +9,26 @@
   box-sizing: border-box;
 }
 
+a {
+   color: #7B1E24;        
+  text-decoration: none;  
+}
+
 /* ========================================================================
    Tipografía global
    ======================================================================== */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
-  line-height: 1.6;
-  color: #333333;
-  background-color: #FFFFFF;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display', serif;
@@ -203,7 +214,7 @@ nav .nav-link.active::after {
    ======================================================================== */
 footer {
   padding: 1.5rem 2rem;
-  background-color: #F7F5F0;
+  background-color: #F5F0E1;
   border-top: 1px solid #CCCCCC;
   text-align: center;
 }

@@ -1,0 +1,28 @@
+[
+  { "id": 1,  "title": "Nieto Senetiner",  "price": 10.00, "image": "producto1.jpg",  "onSale": false, "originalPrice": null },
+  { "id": 2,  "title": "Carbon",  "price": 12.00, "image": "producto2.jpg",  "onSale": false, "originalPrice": null },
+  { "id": 3,  "title": "San Felipe",  "price": 14.00, "image": "producto3.jpg",  "onSale": false, "originalPrice": null },
+  { "id": 4,  "title": "Los Primo",  "price": 16.00, "image": "producto4.jpg",  "onSale": false, "originalPrice": null },
+  { "id": 5,  "title": "Norton D.O.C  ",  "price": 18.00, "image": "producto5.jpg",  "onSale": false, "originalPrice": null },
+  { "id": 6,  "title": "Alamos",  "price": 20.00, "image": "producto6.jpg",  "onSale": false, "originalPrice": null },
+  { "id": 7,  "title": "Fond de Cave",  "price": 22.00, "image": "producto7.jpg",  "onSale": false, "originalPrice": null },
+  { "id": 8,  "title": "Frontera",  "price": 24.00, "image": "producto8.jpg",  "onSale": false, "originalPrice": null },
+  { "id": 9,  "title": "Putruele",  "price": 26.00, "image": "producto9.jpg",  "onSale": false, "originalPrice": null },
+  { "id": 10, "title": "Santa Julia", "price": 28.00, "image": "producto10.jpg", "onSale": false, "originalPrice": null },
+  { "id": 11, "title": "Quara", "price": 30.00, "image": "producto11.jpg", "onSale": false, "originalPrice": null },
+  { "id": 12, "title": "Penfolds", "price": 32.00, "image": "producto12.jpg", "onSale": false, "originalPrice": null },
+
+  { "id": 13, "title": "Trumpeter",  "price": 15.00, "image": "producto13.jpg", "onSale": true,  "originalPrice": 20.00 },
+  { "id": 14, "title": "Govah",  "price": 17.00, "image": "producto14.jpg", "onSale": true,  "originalPrice": 22.00 },
+  { "id": 15, "title": "Alma Mora",  "price": 19.00, "image": "producto15.jpg", "onSale": true,  "originalPrice": 24.00 },
+  { "id": 16, "title": "Dada",  "price": 21.00, "image": "producto16.jpg", "onSale": true,  "originalPrice": 26.00 },
+  { "id": 17, "title": "Reservado",  "price": 23.00, "image": "producto17.jpg", "onSale": true,  "originalPrice": 28.00 },
+  { "id": 18, "title": "Cafayate",  "price": 25.00, "image": "producto18.jpg", "onSale": true,  "originalPrice": 30.00 },
+  { "id": 19, "title": "Chocalan",  "price": 27.00, "image": "producto19.jpg", "onSale": true,  "originalPrice": 32.00 },
+  { "id": 20, "title": "Combo Vinos",  "price": 29.00, "image": "producto20.jpg", "onSale": true,  "originalPrice": 34.00 },
+  { "id": 21, "title": "Elementos",  "price": 31.00, "image": "producto21.jpg", "onSale": true,  "originalPrice": 36.00 },
+  { "id": 22, "title": "Finca Las Moras", "price": 33.00, "image": "producto22.jpg", "onSale": true,  "originalPrice": 38.00 },
+  { "id": 23, "title": "Sallier de la Tour", "price": 35.00, "image": "producto23.jpg", "onSale": true,  "originalPrice": 40.00 },
+  { "id": 24, "title": "Santa Julia", "price": 37.00, "image": "producto24.jpg", "onSale": true,  "originalPrice": 42.00 }
+]
+

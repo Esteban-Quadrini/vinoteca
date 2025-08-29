@@ -1,50 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ofertas</title>
+  <title>Tienda de Vinos – Ofertas Exclusivas</title>
+  <meta name="description" content="Ofertas especiales en Malbec, Cabernet Sauvignon y Syrah. ¡Descuentos hasta 30% y envío gratis a partir de $10 000!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://tu-dominio.com/page/ofertas.html">
+  <meta name="robots" content="index, follow">
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
 
-  <!-- CSS puro central -->
+  <meta property="og:title" content="Tienda de Vinos – Ofertas">
+  <meta property="og:description" content="Descuentos en nuestra selección de vinos.">
+  <meta property="og:image" content="https://tu-dominio.com/assets/og-image-offers.png">
+  <meta property="og:url" content="https://tu-dominio.com/page/ofertas.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body data-page="offers">
-
-
+<body data-page="offers" class="bg-light">
   <header>
-    <h1>Tienda Online</h1>
-    <nav>
-      <ul class="nav">
-        <li><a href="../index.html">Productos</a></li>
-          <li><a href="ofertas.html">Ofertas</a></li>
-          <li><a href="carrito.html">Carrito</a></li>
-
-      </ul>
-    </nav>
+    <div class="d-flex justify-content-between align-items-center px-4 py-3">
+      <h1>Mi Tienda de Vinos</h1>
+      <nav>
+        <ul class="nav">
+          <li><a class="nav-link" href="../index.html">Productos</a></li>
+          <li><a class="nav-link active" href="ofertas.html">Ofertas</a></li>
+          <li><a class="nav-link" href="carrito.html">Carrito</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main class="ofertas-section">
-    <div class="ofertas-grid">
-      <div class="offer-card">
-        <span class="offer-badge">–20%</span>
-        <img src="https://via.placeholder.com/200x150" alt="Oferta 1">
-        <div class="info">
-          <h3 class="title">Oferta 1</h3>
-          <p class="price"><del>$15.00</del> $12.00</p>
-        </div>
-      </div>
-      <!-- Más .offer-card -->
-    </div>
+  <main class="container flex-grow-1 py-4">
+    <section class="ofertas-section mb-5">
+      <h2>Ofertas Malbec</h2>
+      <div id="group-malbec-offers" class="ofertas-grid"></div>
+    </section>
+    <section class="ofertas-section mb-5">
+      <h2>Ofertas Cabernet Sauvignon</h2>
+      <div id="group-cabernet-offers" class="ofertas-grid"></div>
+    </section>
+    <section class="ofertas-section mb-5">
+      <h2>Ofertas Syrah</h2>
+      <div id="group-syrah-offers" class="ofertas-grid"></div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="text-center py-3">
     <small>© 2025 Mi Tienda. Todos los derechos reservados.</small>
   </footer>
-<script type="module" src="../js/app.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="module" src="../js/app.js" defer></script>
 </body>
 </html>
+

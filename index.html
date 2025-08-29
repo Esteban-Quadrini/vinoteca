@@ -1,54 +1,90 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Productos</title>
+  <title>Tienda de Vinos – Compra Malbec, Cabernet y Syrah Online</title>
+  <meta name="description" content="Compra online los mejores Malbec, Cabernet Sauvignon y Syrah con ofertas exclusivas y envío gratuito a partir de $10 000.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://tu-dominio.com/index.html">
+  <meta name="robots" content="index, follow">
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+  
+  <meta property="og:title" content="Tienda de Vinos – Productos">
+  <meta property="og:description" content="Descubre nuestra selección de vinos y aprovecha descuentos exclusivos.">
+  <meta property="og:image" content="https://tu-dominio.com/assets/og-image.png">
+  <meta property="og:url" content="https://tu-dominio.com/index.html">
+  <meta property="og:type" content="website">
 
-  <!-- Tu CSS puro -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="products">
-
-  <!-- Header y Navegación -->
+<body data-page="products" class="bg-light">
   <header>
-    <h1>Tienda Online</h1>
-    <nav>
-      <ul class="nav">
-         <li><a href="index.html">Productos</a></li>
-          <li><a href="page/ofertas.html">Ofertas</a></li>
-          <li><a href="page/carrito.html">Carrito</a></li>
-
-      </ul>
-    </nav>
+    <div class="d-flex justify-content-between align-items-center px-4 py-3">
+      <h1>Mi Tienda de Vinos</h1>
+      <nav>
+        <ul class="nav">
+          <li><a class="nav-link active" href="index.html">Productos</a></li>
+          <li><a class="nav-link" href="page/ofertas.html">Ofertas</a></li>
+          <li><a class="nav-link" href="page/carrito.html">Carrito</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Sección Productos -->
-  <main class="productos-section">
-    <div class="productos-grid">
-      <!-- Card de ejemplo -->
-      <div class="product-card">
-        <img src="https://via.placeholder.com/200x150" alt="Producto 1">
-        <div class="info">
-          <h3 class="title">Producto 1</h3>
-          <p class="price">$10.00</p>
+  <main class="container flex-grow-1">
+    <div class="filters d-flex flex-wrap gap-2 align-items-end py-4">
+      <div class="form-group">
+        <label for="search-input">Buscar</label>
+        <input id="search-input" type="search" class="form-control" placeholder="Nombre del vino">
+      </div>
+      <div class="form-group">
+        <label for="filter-type">Variedad</label>
+        <select id="filter-type" class="form-select">
+          <option value="all">Todas</option>
+          <option value="malbec">Malbec</option>
+          <option value="cabernet">Cabernet</option>
+          <option value="syrah">Syrah</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Precio</label>
+        <div class="d-flex gap-1">
+          <input id="filter-min-price" type="number" class="form-control" placeholder="Mín" min="0">
+          <input id="filter-max-price" type="number" class="form-control" placeholder="Máx" min="0">
         </div>
       </div>
-      <!-- Duplica .product-card según tu catálogo -->
+      <button id="apply-filters" class="btn btn-sm btn-outline-primary">Aplicar filtros</button>
+      <button id="clear-filters" class="btn btn-sm btn-outline-secondary">Limpiar</button>
     </div>
+
+    <section class="productos-section">
+      <h2>Vinos Malbec</h2>
+      <div id="group-malbec" class="productos-grid"></div>
+    </section>
+
+    <section class="productos-section">
+      <h2>Vinos Cabernet Sauvignon</h2>
+      <div id="group-cabernet" class="productos-grid"></div>
+    </section>
+
+    <section class="productos-section">
+      <h2>Vinos Syrah</h2>
+      <div id="group-syrah" class="productos-grid"></div>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer>
+  <footer class="text-center py-3">
     <small>© 2025 Mi Tienda. Todos los derechos reservados.</small>
   </footer>
- <script type="module" src="js/app.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="module" src="js/app.js" defer></script>
 </body>
 </html>
-
